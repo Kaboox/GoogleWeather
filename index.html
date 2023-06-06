@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcEROAMoFjBAxHhIVnZK0EYD3Y5kQezU" async defer></script>
+    <script src="dist/bundle.js" defer></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="content__top">
+
+                <h1 class="title">GoogleWeather</h1>
+
+                <form>
+                    <input type="text" placeholder="City name..." id="city">
+                    <button type="submit" class="submit" id="submit">Search</button>
+                </form>
+                <p class="city-name">
+                    Kraków
+                </p>
+            </div>
+            <div class="content__middle">
+                <div class="temperature">
+                    <h2>Temperature</h2>
+                    <p class="temperature__amount"></p>
+                </div>
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <p class="weather__type"></p>
+                </div>
+                <div class="humidity">
+                    <h2>Humidity</h2>
+                    <p class="humidity__amount"></p>
+                </div>
+            </div>
+            <div class="content__bottom">
+                <div class="map" id="map"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
